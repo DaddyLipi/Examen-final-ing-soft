@@ -12,18 +12,19 @@ describe("Iterador de numeros", () => {
   });
   function NumeroLiteral(numero)
   {
+    let listaNumeros=["cero","uno","dos"]
     let numerolit;
       if(numero==0)
       {
-        numerolit="cero";
+        numerolit=listaNumeros[0];
       }
       else if(numero==1)
       {
-        numerolit="uno";
+        numerolit=listaNumeros[1];
       }
       else if(numero==2)
       {
-        numerolit="dos";
+        numerolit=listaNumeros[2];
       }
       return numerolit;
   }
