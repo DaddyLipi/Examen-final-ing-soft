@@ -8,12 +8,14 @@ describe("Iterador de numeros", () => {
   });
   function NumeroLiteral(numero)
   {
+    let numerolit;
       if(numero==0)
       {
-        return "cero";
+        numerolit="cero";
       }
       else
       {
-        return "uno";
+        numerolit="uno";
       }
+      return numerolit;
   }
