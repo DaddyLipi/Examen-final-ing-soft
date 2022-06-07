@@ -8,11 +8,14 @@ describe("Iterador de numeros", () => {
     it("Da el numero 2", () => {
       expect(NumeroLiteral(2)).toEqual("dos");
     });
+    it("Da el numero 9", () => {
+      expect(NumeroLiteral(9)).toEqual("nueve");
+    });
     
   });
   function NumeroLiteral(numero)
   {
-    let listaNumeros=["cero","uno","dos"]
+    let listaNumeros=["cero","uno","dos","tres","cuatro","cinco","seis","siete","ocho","nueve"]
     let numerolit;
     numerolit=listaNumeros[numero];
     return numerolit;
