@@ -8,5 +8,5 @@ const divNum = document.querySelector("#numero-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   divNum.innerHTML=Number.parseInt(first.value);
-  //div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = NumeroLiteral(Number.parseInt(first.value));
 });

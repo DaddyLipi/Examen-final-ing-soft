@@ -13,4 +13,13 @@ describe("ATDD", () => {
       boton.click();
       expect(parseInt(litnumero.innerHTML)).toEqual(0);
     });
+    it("Test numero iterativo", () => {
+        let boton = document.querySelector("#boton");
+        let numero = document.querySelector("#numero-input");
+        let litnumero = document.querySelector("#resultado-div");
+    
+        numero.value = 0;
+        boton.click();
+        expect(litnumero.innerHTML).toEqual("cero");
+      });
   });  
