@@ -5,6 +5,10 @@ describe("Iterador de numeros", () => {
     it("Da el numero 1", () => {
         expect(NumeroLiteral(1)).toEqual("uno");
       });
+    it("Da el numero 2", () => {
+      expect(NumeroLiteral(2)).toEqual("dos");
+    });
+    
   });
   function NumeroLiteral(numero)
   {
@@ -13,9 +17,13 @@ describe("Iterador de numeros", () => {
       {
         numerolit="cero";
       }
-      else
+      else if(numero==1)
       {
         numerolit="uno";
+      }
+      else if(numero==2)
+      {
+        numerolit="dos";
       }
       return numerolit;
   }
