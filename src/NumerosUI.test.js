@@ -4,7 +4,7 @@ describe("ATDD", () => {
       document.body.innerHTML = fs.readFileSync("index.html", "utf8");
       require("./presenter.js");
     });
-    it("Test anio", () => {
+    it("Test numero origianl", () => {
       let boton = document.querySelector("#boton");
       let numero = document.querySelector("#numero-input");
       let litnumero = document.querySelector("#numero-div");
